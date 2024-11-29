@@ -10,7 +10,7 @@ Le projet **Libft** consiste à réimplémenter des fonctions standard de la bib
 
 ### **Partie 1 - Fonctions de la libc**
 Ces fonctions ont été recodées pour reproduire le comportement de leurs équivalents standards :
-- **Vérifications de caractères** : `isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint`.
+- **Vérifications de caractères** : `isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint`, `ft_islowercase`,`ft_istouppercase`.
 - **Manipulation de chaînes** : `strlen`, `strlcpy`, `strlcat`.
 - **Manipulation de mémoire** : `memset`, `bzero`, `memcpy`, `memmove`.
 - **Autres utilitaires** : `toupper`, `tolower`, `strchr`, `strrchr`, `strncmp`, `memchr`, `memcmp`, `strnstr`, `atoi`.
@@ -21,7 +21,7 @@ Ajout de nouvelles fonctions utiles, comme :
 - Manipulation de chaînes : `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_itoa`.
 - Iteration et transformation : `ft_strmapi`, `ft_striteri`.
 - Écriture sur fichiers : `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
-- Manipulation chiffres  : `ft_putnbr_base`, `ft_base_power`, `ft_digitlen` .
+- Manipulation des chiffres  : `ft_putnbr_base`, `ft_base_power`, `ft_digitlen` .
 
 ### **Partie Bonus - Manipulation de listes**
 Ajout de fonctions pour travailler avec des listes chaînées :
@@ -39,7 +39,7 @@ Ajout de fonctions pour travailler avec des listes chaînées :
 ### **Étapes**
 1. Clonez le dépôt Git :
    ```bash
-   git clone https://github.com/votre-utilisateur/libft.git
+   git clone https://github.com/maximecini/libft.git
    cd libft
    ```
 
