@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcini-ha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:19:44 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/10/03 18:35:20 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:25:20 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 long	valide_base(char *base)
 {
@@ -38,39 +36,47 @@ long	valide_base(char *base)
 	return (i);
 }
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-char	ft_cast_base(int i, char *base)
-{	
-	return (base[i]);
-}
-
-void	ft_putnbr_base(int nbr, char *base)
+/**
+ * @brief Affiche un entier dans une base spécifiée.
+ *
+ * La fonction `ft_putnbr_base` prend un entier `n` et une base `base` (sous forme de chaîne de caractères)
+ * et affiche la représentation de l'entier `n` dans cette base. 
+ * Cette fonction prend en charge les bases de 2 à 16 et gère les entiers négatifs.
+ * 
+ * @param n L'entier à afficher.
+ * @param base La base dans laquelle l'entier doit être affiché, sous forme de chaîne de caractères.
+ *             Par exemple, pour la base 16, la chaîne peut être "0123456789ABCDEF".
+ * 
+ * @return Aucun retour (la fonction affiche directement le résultat).
+ * 
+ * @note La fonction ne gère pas les bases inférieures à 2 ou supérieures à 16.
+ *       Elle utilise les chiffres et lettres pour les bases supérieures à 10.
+ *       Si `n` est négatif, un signe '-' est affiché avant le nombre.
+ */
+size_t	ft_putnbr_base(int nbr, char *base)
 {
 	long	number;
-	long	lengt_base;		
-
-	lengt_base = valide_base(base);
-	if (!lengt_base)
-		return ;
+	long	size_base;	
+	long 	size_digit;
+	long	curent;
+	
+	size_base = valide_base(base);
+	if (!size_base)
+		return 0 ;
 	number = nbr;
 	if (number < 0)
 	{
 		number *= -1;
 		write(1, "-", 1);
 	}
-	if (number >= lengt_base)
-	{
-		ft_putnbr_base(number / lengt_base, base);
-	}	
-	ft_putchar(ft_cast_base(number % lengt_base, base));
-}
-
-int	main(int argc, char **argv)
-{
-	(void) argc;
-	ft_putnbr_base(atoi(argv[1]), argv[2]);
+	curent = ft_digitlen(number, size_base);
+	size_digit = ft_base_power(number, size_base);
+	if(nbr < 0)
+		curent++;
+	while (size_digit > 0)
+	{	
+		ft_putchar_fd(base[(number / size_digit) % size_base], 1);
+		size_digit /= size_base;
+	}
+	return curent;
 }

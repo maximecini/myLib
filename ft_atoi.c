@@ -6,12 +6,12 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 17:35:53 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:16:49 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:24:46 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @brief Convertit une chaîne de caractères en un entier.
+/* */
+/* @brief Convertit une chaîne de caractères en un entier.*
  *
  * La fonction `atoi` prend une chaîne de caractères représentant un nombre
  * et renvoie sa valeur entière. Elle ignore les espaces blancs au début de

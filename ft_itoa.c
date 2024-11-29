@@ -6,29 +6,11 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 21:56:41 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:20:47 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:38:34 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static long	ft_lenght_s(long long n)
-{
-	long long	i;
-
-	i = 1;
-	if (n < 0)
-	{
-		n = -n;
-		i++;
-	}
-	while (n > 9)
-	{
-		n = n / 10;
-		i++;
-	}
-	return (i);
-}
 
 /**
  * @brief Convertit un entier en chaîne de caractères.
@@ -56,7 +38,7 @@ char	*ft_itoa(int n)
 		number = -number;
 	if (number == 0)
 		return (ft_strdup("0"));
-	l = ft_lenght_s(n);
+	l = ft_digitlen(n, 10);
 	str_number = (char *)malloc((l + 1) * sizeof(char));
 	if (!str_number)
 		return (NULL);

@@ -21,6 +21,7 @@ Ajout de nouvelles fonctions utiles, comme :
 - Manipulation de chaînes : `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_itoa`.
 - Iteration et transformation : `ft_strmapi`, `ft_striteri`.
 - Écriture sur fichiers : `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
+- Manipulation chiffres  : `ft_putnbr_base`, `ft_base_power`, `ft_digitlen` .
 
 ### **Partie Bonus - Manipulation de listes**
 Ajout de fonctions pour travailler avec des listes chaînées :

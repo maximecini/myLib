@@ -6,16 +6,11 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:41:17 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:42:18 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:35:49 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_islowercase(int c)
-{
-	return (c >= 'A' && c <= 'Z');
-}
 
 /**
  * @brief Convertit un caractère en minuscule.
@@ -32,7 +27,7 @@ static int	ft_islowercase(int c)
  */
 int	ft_tolower(int c)
 {
-	if (ft_islowercase(c))
+	if (ft_istouppercase(c))
 		return (c + ('a' - 'A'));
 	return (c);
 }

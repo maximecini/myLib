@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:41:13 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:42:46 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:39:06 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,25 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+
+/******************************/
+/*         DEF FORMAT          */
+/*******************************/
+# define CHAR 'c'
+# define STRING 's'
+# define DECIMAL 'd'
+# define INTEGER 'i'
+# define U_INTEGER 'u'
+# define HEX_LOWER_ 'x'
+# define HEX_UPP 'X'
+# define POINTER 'p'
+# define PERCENT '%'
+/*******************************/
+/*         base        */
+/*******************************/
+# define BASE_HEX "0123456789abcdef"
+# define BASE_HEX_UPP "0123456789ABCDEF"
+# define BASE_DEC "0123456789"
 
 typedef struct s_list
 {
@@ -47,6 +66,7 @@ int					ft_memcmp(const void *p1, const void *p2, size_t size);
 char				*ft_strnstr(const char *str, const char *search,
 						size_t size);
 int					ft_atoi(const char *str);
+size_t				ft_digitlen(long long n, int size);
 void				*ft_calloc(size_t s, size_t size_of);
 char				*ft_strdup(const char *source);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
@@ -59,7 +79,7 @@ void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
+int					ft_putnbr_fd(int n, int fd);
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 int					ft_lstsize(t_list *lst);
@@ -70,5 +90,10 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+size_t				ft_base_power(long long s, int size_base);
+int					ft_istouppercase(int c);
+int					ft_islowercase(int c);
+
+
 
 #endif

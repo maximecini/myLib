@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 05:53:47 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:36:04 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 19:38:51 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,27 @@
  * @note Cette fonction est souvent utilisée pour afficher des entiers dans des flux de sortie
  *       différents de `stdout`, comme `stderr`, ou pour écrire des entiers dans des fichiers.
  */
-void	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd(int nbr, int fd)
 {
 	long	number;
-
-	number = (long)n;
+	long 	size_digit;
+	long	curent;
+	
+	number = nbr;
 	if (number < 0)
 	{
 		number *= -1;
-		ft_putchar_fd('-', fd);
+		write(1, "-", 1);
 	}
-	if (number > 9)
-	{
-		ft_putnbr_fd(number / 10, fd);
+	curent = ft_digitlen(number, 10);
+	size_digit = ft_base_power(number, 10);
+	if(nbr < 0)
+		curent++;
+	while (size_digit > 0)
+	{	
+		ft_putchar_fd((number / size_digit) % 10, 1);
+		size_digit /= 10;
 	}
-	ft_putchar_fd(number % 10 + '0', fd);
+	return curent;
 }
+
