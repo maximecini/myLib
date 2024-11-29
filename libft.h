@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:41:13 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 19:39:06 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 21:14:33 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,5 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 size_t				ft_base_power(long long s, int size_base);
 int					ft_istouppercase(int c);
 int					ft_islowercase(int c);
-
-
 
 #endif

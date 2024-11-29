@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:41:17 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 19:35:49 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 21:13:38 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 /**
  * @brief Convertit un caractère en minuscule.
  *
- * La fonction `ft_tolower` prend un caractère en entrée et retourne sa version en minuscule si le caractère
- * est une lettre majuscule (A-Z). Si le caractère est déjà en minuscule (a-z) ou n'est pas une lettre, 
+ * La fonction `ft_tolower` prend un caractère en entrée et retourne sa 
+ * version en minuscule si le caractère est une lettre majuscule (A-Z). 
+ * Si le caractère est déjà en minuscule (a-z) ou n'est pas une lettre, 
  * la fonction retourne le caractère inchangé.
  *
  * @param c Le caractère à convertir.
  * 
- * @return Le caractère converti en minuscule, ou le caractère inchangé s'il est déjà en minuscule ou non alphabétique.
- * 
- * @note Cette fonction est équivalente à la fonction standard `tolower` de la bibliothèque C.
+ * @return Le caractère converti en minuscule, ou le caractère inchangé 
+ * s'il est déjà en minuscule ou non alphabétique.
  */
 int	ft_tolower(int c)
 {

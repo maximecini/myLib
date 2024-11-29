@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 21:56:41 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 19:38:34 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 20:13:36 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,19 @@
 /**
  * @brief Convertit un entier en chaîne de caractères.
  *
- * La fonction `itoa` prend un entier `n` et le convertit en une chaîne de caractères
- * représentant ce nombre. La chaîne retournée est allouée dynamiquement et doit être
- * libérée après utilisation. Cette fonction gère également les nombres négatifs.
+ * La fonction `itoa` prend un entier `n` et le convertit en une chaîne 
+ * de caractères représentant ce nombre. La chaîne retournée est allouée 
+ * dynamiquement et doit être libérée après utilisation. Cette fonction gère 
+ * également les nombres négatifs.
  * 
  * @param n L'entier à convertir en chaîne de caractères.
  * 
- * @return La chaîne de caractères représentant l'entier, ou NULL si l'allocation échoue.
+ * @return La chaîne de caractères représentant l'entier, ou NULL 
+ * 	si l'allocation échoue.
  * 
- * @note La fonction gère les entiers négatifs en ajoutant un signe '-' au début de la chaîne.
- *       La chaîne retournée doit être libérée manuellement après utilisation avec `free()`.
+ * @note La fonction gère les entiers négatifs en ajoutant un signe '-' 
+ * 	au début de la chaîne.La chaîne retournée doit être libérée manuellement 
+ * 	après utilisation avec `free()`.
  */
 
 char	*ft_itoa(int n)

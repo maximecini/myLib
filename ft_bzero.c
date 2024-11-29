@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:36:12 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:17:45 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 20:04:01 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
  * @param s Pointeur vers la zone mémoire à mettre à zéro.
  * @param len La taille de la zone mémoire à traiter, en octets.
  * 
- * @note Cette fonction est obsolète et est remplacée par `memset(s, 0, len)` dans les
- *       implémentations modernes, mais elle peut encore être utilisée dans certains
- *       cas de compatibilité avec des systèmes plus anciens.
+ * @note Cette fonction est obsolète et est remplacée par `memset(s, 0, len)` 
+ * dans lesimplémentations modernes, mais elle peut encore être utilisée 
+ * dans certains cas de compatibilité avec des systèmes plus anciens.
  */
 void	ft_bzero(void *s, size_t n)
 {

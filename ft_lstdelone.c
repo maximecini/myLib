@@ -6,19 +6,25 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 14:47:04 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 19:10:06 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 20:20:02 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// @brief Supprime un élément spécifique d'une liste chaînée et libère la mémoire associée.
-// @param lst L'élément de la liste à supprimer.
-// @param del La fonction à appliquer pour supprimer le contenu de l'élément.
-//  @return Aucune valeur de retour. L'élément est supprimé de la liste et la mémoire est libérée.
-//  @note Cette version peut comporter des comportements supplémentaires,comme des vérifications
-//   spécifiques ou des optimisations pour la suppression des éléments.
-
+/**
+ * @brief Supprime et libère un élément d'une liste chaînée.
+ *
+ * La fonction `ft_lstdelone` prend en paramètre un élément d'une liste 
+ * chaînée (de type `t_list`) et une fonction `del` qui est utilisée pour 
+ * libérer le contenu de cet élément. La mémoire allouée pour l'élément est 
+ * ensuite libérée. Le pointeur vers l'élément ne sera plus valide après l'appel.
+ *
+ * @param lst Un pointeur vers l'élément de la liste à supprimer.
+ * @param del Une fonction pointeur utilisée pour libérer le contenu de 
+ * 	l'élément.Cette fonction doit être définie par l'utilisateur et adaptée au 
+ *
+ * @return Aucun retour. La mémoire de l'élément `lst` est libéréents.
+*/
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)

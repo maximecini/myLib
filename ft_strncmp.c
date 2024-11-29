@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 09:40:17 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:40:05 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 21:05:15 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,25 @@
 /**
  * @brief Compare les `n` premiers caractères de deux chaînes de caractères.
  *
- * La fonction `ft_strncmp` compare les `n` premiers caractères de deux chaînes `s1` et `s2`. 
- * Elle retourne un entier qui indique la différence entre les deux chaînes :
+ * La fonction `ft_strncmp` compare les `n` premiers caractères de 
+ * deux chaînes `s1` et `s2`.Elle retourne un entier qui indique la différence 
+ * entre les deux chaînes :
  * - Un nombre négatif si `s1` est inférieur à `s2`.
  * - Un nombre positif si `s1` est supérieur à `s2`.
  * - Zéro si les `n` premiers caractères des deux chaînes sont égaux.
- * Si l'une des chaînes est plus courte que l'autre et que la comparaison atteint la fin de la chaîne,
- * la fonction renvoie la différence entre les caractères nuls (ce qui est équivalent à une comparaison avec `'\0'`).
+ * Si l'une des chaînes est plus courte que l'autre et que la comparaison 
+ * atteint la fin de la chaîne,la fonction renvoie la différence entre 
+ * les caractères nuls (ce qui est équivalent à une comparaison avec `'\0'`).
  *
  * @param s1 La première chaîne de caractères à comparer.
  * @param s2 La deuxième chaîne de caractères à comparer.
  * @param n Le nombre de caractères à comparer.
  * 
- * @return Un nombre négatif, zéro, ou un nombre positif, en fonction du résultat de la comparaison.
+ * @return Un nombre négatif, zéro, ou un nombre positif, en fonction 
+ * 	du résultat de la comparaison.
  * 
- * @note Cette fonction est utile pour effectuer des comparaisons limitées de chaînes sans avoir
- *       besoin de les comparer entièrement, ce qui peut être utile pour les comparaisons de préfixes
- *       ou pour éviter de comparer des parties non pertinentes de chaînes longues.
+ * @note Cette fonction est utile pour effectuer des comparaisons limitées 
+ * 	de chaînes sans avoir besoin de les comparer entièrement.
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -14,22 +14,29 @@
 #include "libft.h"
 
 /**
- * @brief Applique une fonction à chaque élément d'une liste chaînée et crée une nouvelle liste (version bonus).
+ * @brief Applique une fonction à chaque élément d'une liste chaînée et crée 
+ * 	une nouvelle liste.
  *
- * La fonction `ft_lstmap` prend en entrée un pointeur vers la tête d'une liste chaînée (`lst`),
- * une fonction de transformation (`f`) et une fonction de suppression (`del`). Elle parcourt la liste,
- * applique la fonction de transformation `f` sur chaque élément, et crée une nouvelle liste avec les
- * résultats. Si une erreur d'allocation mémoire se produit, elle libère la mémoire déjà allouée à l'aide
- * de la fonction `del` pour éviter les fuites de mémoire.
+ * La fonction `ft_lstmap` prend en entrée un pointeur vers la tête 
+ * d'une liste chaînée (`lst`),une fonction de transformation (`f`) 
+ * et une fonction de suppression (`del`). Elle parcourt la liste, 
+ * applique la fonction de transformation `f` sur chaque élément, 
+ * et crée une nouvelle liste avec les résultats. Si une erreur d'allocation
+ * mémoire se produit, elle libère la mémoire déjà allouée à l'aide de la 
+ * fonction `del` pour éviter les fuites de mémoire.
  * 
- * @param lst Le pointeur vers le premier élément de la liste (tête de la liste).
- * @param f La fonction de transformation à appliquer à chaque élément de la liste.
- * @param del La fonction de suppression à appliquer au contenu des éléments en cas d'erreur.
+ * @param lst Le pointeur vers le premier élément de la liste.
+ * @param f La fonction de transformation à appliquer à chaque élément 
+ * 	de la liste.
+ * @param del La fonction de suppression à appliquer au contenu des éléments 
+ * 	en cas d'erreur.
  * 
- * @return La nouvelle liste contenant les éléments transformés, ou NULL si l'allocation échoue.
+ * @return La nouvelle liste contenant les éléments transformés, ou NULL 
+ * 	si l'allocation échoue.
  * 
- * @note Cette version peut inclure des vérifications supplémentaires ou des optimisations de performance,
- *       telles que la gestion de types de données spécifiques ou des erreurs d'allocation.
+ * @note Cette version peut inclure des vérifications supplémentaires ou des 
+ * optimisations de performance,telles que la gestion de types de données
+ *  spécifiques ou des erreurs d'allocation.
  */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:05:15 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:41:16 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 21:11:08 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,23 +41,27 @@ static int	ft_char_in_set(char const *set, char c)
 	return (0);
 }
 /**
- * @brief Supprime les caractères spécifiés du début et de la fin d'une chaîne.
+ * @brief Supprime les caractères spécifiés du début et de la fin d'une 
+ * 	chaîne.
  *
- * La fonction `ft_strtrim` prend une chaîne de caractères `s1` et un ensemble de caractères
- * `set`, et retourne une nouvelle chaîne dans laquelle les caractères de `set` sont supprimés
- * du début et de la fin de `s1`. La fonction alloue dynamiquement de la mémoire pour la chaîne
- * résultante. Si `s1` ou `set` est `NULL`, la fonction retourne `NULL`. La mémoire allouée pour
- * la chaîne retournée doit être libérée après usage.
+ * La fonction `ft_strtrim` prend une chaîne de caractères `s1` et un 
+ * ensemble de caractères`set`, et retourne une nouvelle chaîne dans 
+ * laquelle les caractères de `set` sont supprimés du début et de la fin 
+ * de `s1`.La fonction alloue dynamiquement de la mémoire pour 
+ * la chaîne résultante. 
+ * Si `s1` ou `set` est `NULL`, la fonction retourne `NULL`. La mémoire 
+ * allouée pour la chaîne retournée doit être libérée après usage.
  *
  * @param s1 La chaîne de caractères à traiter.
  * @param set L'ensemble de caractères à supprimer du début et de la fin de `s1`.
  * 
- * @return Une nouvelle chaîne contenant `s1` sans les caractères de `set` au début et à la fin,
- *         ou `NULL` en cas d'allocation échouée.
+ * @return Une nouvelle chaîne contenant `s1` sans les caractères de `set` 
+ * au début et à la fin,ou `NULL` en cas d'allocation échouée.
  * 
- * @note La fonction alloue dynamiquement la mémoire pour la chaîne résultante. Il est donc nécessaire
- *       de libérer cette mémoire une fois qu'elle n'est plus utilisée.
+ * @note La fonction alloue dynamiquement la mémoire pour la chaîne résultante.
+ *  Il est donc nécessaire de libérer cette mémoire.
  */
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	min;

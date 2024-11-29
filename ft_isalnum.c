@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:06:57 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:18:51 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 20:07:27 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 /**
  * @brief Vérifie si un caractère est alphanumérique.
  *
- * La fonction `isalnum` prend un caractère en entrée et vérifie s'il est une lettre
- * (majuscule ou minuscule) ou un chiffre. Elle retourne un résultat booléen :
+ * La fonction `isalnum` prend un caractère en entrée et vérifie
+ * s'il est une lettre(majuscule ou minuscule) ou un chiffre. Elle retourne 
+ * un résultat booléen :
  * - Retourne 1 si le caractère est alphanumérique (lettre ou chiffre).
  * - Retourne 0 si le caractère n'est ni une lettre, ni un chiffre.
  * 

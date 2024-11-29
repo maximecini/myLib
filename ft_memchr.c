@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:29:18 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 16:32:26 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/11/29 20:30:02 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,21 @@
 /**
  * @brief Recherche un octet spécifique dans une zone mémoire.
  *
- * La fonction `ft_memchr` parcourt une zone mémoire et recherche la première occurrence
- * de l'octet spécifié. Elle renvoie un pointeur vers la première occurrence trouvée,
- * ou `NULL` si l'octet n'est pas trouvé dans la zone mémoire.
+ * La fonction `ft_memchr` parcourt une zone mémoire et recherche la 
+ * première occurrence de l'octet spécifié. Elle renvoie un pointeur 
+ * vers la première occurrence trouvée, ou `NULL` si l'octet n'est pas trouvé
+ * dans la zone mémoire.
  *
  * @param s Le pointeur vers la zone mémoire à explorer.
- * @param c L'octet à rechercher dans la zone mémoire (converti en unsigned char).
+ * @param c L'octet à rechercher dans la zone mémoire (unsigned char).
  * @param n Le nombre d'octets à examiner.
  * 
- * @return Un pointeur vers la première occurrence de l'octet `c` dans la zone mémoire,
+ * @return Un pointeur vers la première occurrence de l'octet `c` dans 
+ * 	la zone mémoire,
  *         ou `NULL` si l'octet n'est pas trouvé.
  * 
- * @note Cette fonction est équivalente à la fonction standard `memchr` de la bibliothèque C.
+ * @note Cette fonction est équivalente à la fonction standard `memchr` 
+ * de la bibliothèque C.
  */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
