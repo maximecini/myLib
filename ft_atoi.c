@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 17:35:53 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/02 14:31:01 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/10 11:43:05 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,13 +50,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * indice);
-}/*   Created: 2024/11/30 15:03:16 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/02 14:04:48 by rcini-ha         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
- 
+}
