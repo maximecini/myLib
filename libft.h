@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:41:13 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 21:14:33 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/10 13:08:52 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <fcntl.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
 
 /******************************/
 /*         DEF FORMAT          */
@@ -93,5 +97,7 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 size_t				ft_base_power(long long s, int size_base);
 int					ft_istouppercase(int c);
 int					ft_islowercase(int c);
+char				*ft_strjoin_gnl(char *s1, char *s2);
+char				*get_next_line(int fd);
 
 #endif
