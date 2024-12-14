@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 09:50:24 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/14 13:34:30 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:44:41 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_putnbr_printf(int nb, int *i)
 	}
 	if (number > 9)
 	{
-		ft_putnbr(number / 10, i);
+		ft_putnbr_printf(number / 10, i);
 	}
 	*i += 1;
 	ft_putchar_fd(ft_todigits(number % 10), 1);
