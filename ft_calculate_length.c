@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 09:50:24 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/14 13:25:32 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:34:30 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	ft_putnbr_printf(int nb, int *i)
 	*i += 1;
 	ft_putchar_fd(ft_todigits(number % 10), 1);
 }
+
 void	ft_putnbr_base_printf(size_t number, char *base, int *i)
 {
 	unsigned int	lengt_base;
@@ -49,6 +50,7 @@ void	ft_putnbr_base_printf(size_t number, char *base, int *i)
 	*i += 1;
 	ft_putchar_fd(base[number % lengt_base], 1);
 }
+
 int	ft_display_string(void *str, void (*f)(char *, int))
 {
 	if (!((char *)str))

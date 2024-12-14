@@ -6,12 +6,11 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:36:54 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/10 13:06:36 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:28:05 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 char	*ft_strjoin_gnl(char *s1, char *s2)
 {
@@ -25,7 +24,6 @@ char	*ft_strjoin_gnl(char *s1, char *s2)
 		return (ft_strdup(s2));
 	if (!s2 && s1)
 		return (ft_strdup(s1));
-	
 	dest = malloc(sizeof(char) * ((ft_strlen(s1) + ft_strlen(s2)) + 1));
 	if (!dest)
 		return (NULL);

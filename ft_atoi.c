@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 17:35:53 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/10 11:43:05 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:33:23 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
  * et renvoie sa valeur entière. Elle ignore les espaces blancs au début de
  * la chaîne et gère les signes négatifs ou positifs. Si la chaîne ne représente
  * pas un nombre valide, le comportement est indéfini, et la fonction renvoie 0.
- * 
+ *
  * @param str La chaîne de caractères à convertir.
- * 
+ *
  * @return L'entier correspondant à la chaîne de caractères. Si la chaîne
  *         est invalide ou vide, 0 est retourné.
  *
  * @note Cette fonction ne gère pas les erreurs comme le dépassement de capacité
  *       (overflow). Les résultats sont indéfinis pour des chaînes qui dépassent
  *       la capacité d'un entier.
- */
+*/
 int	ft_atoi(const char *str)
 {
 	int	i;

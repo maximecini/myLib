@@ -6,7 +6,7 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:41:13 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/14 13:27:19 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:28:52 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,14 +102,13 @@ char				*get_next_line(int fd);
 size_t				ft_putnbr_base(int nbr, char *base);
 void				ft_putnbr_base_printf(size_t number, char *base, int *i);
 int					ft_display_uint(int number, void f(int, int *));
-int					ft_display_base(size_t number, char *str, void f(size_t, char *, int *));
+int					ft_display_base(size_t number, char *str, void f(size_t,
+							char *, int *));
 int					ft_display_string(void *str, void (*f)(char *, int));
 unsigned int		valide_base(char *base);
 int					ft_int_isdigit(int n);
 void				ft_putnbr_printf(int nb, int *i);
 int					ft_printf(const char *format, ...);
 char				ft_todigits(int n);
-
-
 
 #endif
