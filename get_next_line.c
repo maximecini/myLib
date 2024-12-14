@@ -6,13 +6,13 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 15:03:16 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/12/10 13:10:29 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:26:59 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_get_line(char *buffer)
+static char	*ft_get_line(char *buffer)
 {
 	int		size_line;
 	char	*dest;
@@ -41,7 +41,7 @@ char	*ft_get_line(char *buffer)
 	return (dest);
 }
 
-char	*read_file(int fd, char *res)
+static char	*read_file(int fd, char *res)
 {
 	int		byte_read;
 	char	*buffer;
@@ -67,7 +67,7 @@ char	*read_file(int fd, char *res)
 	return (res);
 }
 
-char	*ft_next_buffer(char *buffer)
+static char	*ft_next_buffer(char *buffer)
 {
 	int		i;
 	int		j;

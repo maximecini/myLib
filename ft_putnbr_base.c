@@ -6,35 +6,12 @@
 /*   By: rcini-ha <rcini-ha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:19:44 by rcini-ha          #+#    #+#             */
-/*   Updated: 2024/11/29 20:46:48 by rcini-ha         ###   ########.fr       */
+/*   Updated: 2024/12/14 13:23:40 by rcini-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	valide_base(char *base)
-{
-	long	i;
-	long	j;
-
-	i = 0;
-	while (base[i])
-	{
-		if (base[i] == 43 || base[i] == 45)
-			return (0);
-		j = 0;
-		while (base[j])
-		{	
-			if (base[i] == base[j] && j != i)
-				return (0);
-			j++;
-		}
-		i++;
-	}
-	if (i == 1)
-		return (0);
-	return (i);
-}
 
 /**
  * @brief Affiche un entier dans une base spécifiée.
